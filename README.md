@@ -29,7 +29,7 @@ reviews at scale — guest **ratings**, review **title & text**, structured **po
 
 | Field | Description |
 |---|---|
-| **Expedia hotel URLs** (`startUrls`) | Expedia hotel-page URLs (any regional TLD, each with a `.h<id>.` segment) **or bare property IDs** (`140596`). |
+| **Hotel URLs or property IDs** (`hotelUrls`) | Expedia hotel-page URLs (any regional TLD, each with a `.h<id>.` segment), Hotels.com `/ho<id>/` URLs, **or bare property IDs** (`140596`). One per line. |
 | **Max reviews per hotel** (`maxReviewsPerHotel`) | Cap per hotel (default 200). |
 | **Sort reviews by** (`sortBy`) | `newest` (default), `oldest`, `highestRating`, `lowestRating`. |
 | **From / To date** (`fromDate` / `toDate`) | Keep only reviews in a `YYYY-MM-DD` range. |
@@ -51,8 +51,8 @@ pick which brands' reviews to return, or leave it empty for the cross-brand unio
 
 ## Pricing
 
-Pay-per-event: **$0.01 per run** + a per-review fee (see the Apify Console pricing panel). Lower **Max reviews per
-hotel** to control cost. Your first runs are covered by Apify's free tier.
+Pay-per-event with **no start fee** — you pay only a per-review fee (see the Apify Console pricing panel). Lower
+**Max reviews per hotel** to control cost. Your first runs are covered by Apify's free tier.
 
 ## Legal
 
