@@ -1,9 +1,9 @@
 # Expedia Reviews Scraper — documentation
 
 Public documentation and examples for the **Expedia Reviews Scraper** Apify actor. Scrape public Expedia hotel
-reviews at scale — guest **ratings**, review **title & text**, structured **positive/negative remarks**, category
-**sub-ratings**, **stay dates**, **traveler type**, **language**, and **hotel owner responses** — plus a per-review
-**LLM-ready markdown** block. Export clean **JSON, CSV, Excel or via API**. No login, no Expedia API key.
+reviews at scale — guest **ratings**, full **review text**, category **sub-ratings**, **stay dates**,
+**traveler type**, **language**, and **hotel owner responses** — plus a per-review **LLM-ready markdown** block.
+Export clean **JSON, CSV, Excel or via API**. No login, no Expedia API key.
 
 > This repository holds **documentation and examples only** — no scraper source code. This is an initial version;
 > content will be expanded and optimized over time.
@@ -40,7 +40,7 @@ reviews at scale — guest **ratings**, review **title & text**, structured **po
 ## Output
 
 One item per hotel with the reviews nested under `reviews[]`. Views: **Reviews** (one row per review, default),
-**Reviews (short)**, **Hotels** (one row per hotel with aggregates), and **AI ingest** (the LLM-ready
+**Hotels** (one row per hotel with aggregates), and **AI ingest** (the LLM-ready
 `markdownContent` column). Ratings are presented on the **/10 scale** to match Expedia's public display.
 
 ## Supported sites
