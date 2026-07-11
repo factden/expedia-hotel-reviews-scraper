@@ -39,9 +39,10 @@ Export clean **JSON, CSV, Excel or via API**. No login, no Expedia API key.
 
 ## Output
 
-One item per hotel with the reviews nested under `reviews[]`. Views: **Reviews** (one row per review, default),
-**Hotels** (one row per hotel with aggregates), and **AI ingest** (the LLM-ready
-`markdownContent` column). Ratings are presented on the **/10 scale** to match Expedia's public display.
+Two datasets: **Reviews** (the default dataset) - one row per guest review, with the hotel context merged onto
+each row - and **Hotels** - one row per hotel with the aggregates. The reviews dataset also exposes an **AI
+ingest** view (the LLM-ready `markdownContent` column). Ratings are presented on the **/10 scale** to match
+Expedia's public display.
 
 ## Supported sites
 
@@ -59,6 +60,16 @@ Pay-per-event with **no start fee** - you pay only a per-review fee (see the Api
 This actor collects only **publicly available** review content. You are responsible for complying with Expedia's
 Terms of Service and applicable laws (including data-protection rules) when using the data.
 
+## Other scrapers by FactDen
+
+- [G2 Reviews Scraper](https://apify.com/factden/g2-reviews-scraper?fpr=factden)
+  ([docs](https://github.com/factden/g2-reviews-scraper))
+- [Trip.com & Ctrip Hotel Reviews Scraper](https://apify.com/factden/ctrip-trip-reviews-scraper?fpr=factden)
+  ([docs](https://github.com/factden/ctrip-trip-reviews-scraper))
+- [Indeed Jobs Scraper](https://apify.com/factden/indeed-jobs-scraper?fpr=factden)
+  ([docs](https://github.com/factden/indeed-jobs-scraper))
+- [All FactDen actors →](https://apify.com/factden?fpr=factden)
+
 ## Links
 
-- Apify Store listing: https://apify.com/factden/expedia-hotel-reviews-scraper
+- Apify Store listing: https://apify.com/factden/expedia-hotel-reviews-scraper?fpr=factden
