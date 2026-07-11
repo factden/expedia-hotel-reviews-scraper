@@ -1,19 +1,19 @@
-# Expedia Reviews Scraper — documentation
+# Expedia Reviews Scraper - documentation
 
 Public documentation and examples for the **Expedia Reviews Scraper** Apify actor. Scrape public Expedia hotel
-reviews at scale — guest **ratings**, full **review text**, category **sub-ratings**, **stay dates**,
-**traveler type**, **language**, and **hotel owner responses** — plus a per-review **LLM-ready markdown** block.
+reviews at scale - guest **ratings**, full **review text**, category **sub-ratings**, **stay dates**,
+**traveler type**, **language**, and **hotel owner responses** - plus a per-review **LLM-ready markdown** block.
 Export clean **JSON, CSV, Excel or via API**. No login, no Expedia API key.
 
-> This repository holds **documentation and examples only** — no scraper source code. This is an initial version;
+> This repository holds **documentation and examples only** - no scraper source code. This is an initial version;
 > content will be expanded and optimized over time.
 
 ## Why use it?
 
-- **Reputation & sentiment analysis** — track guest sentiment for your own or competitor hotels over time.
-- **Competitor benchmarking** — pull rating distributions, category sub-scores and review volume per property.
-- **Market research** — analyze traveler types, languages and what guests praise or complain about.
-- **AI / RAG pipelines** — every review ships with a self-contained `markdownContent` block ready for
+- **Reputation & sentiment analysis** - track guest sentiment for your own or competitor hotels over time.
+- **Competitor benchmarking** - pull rating distributions, category sub-scores and review volume per property.
+- **Market research** - analyze traveler types, languages and what guests praise or complain about.
+- **AI / RAG pipelines** - every review ships with a self-contained `markdownContent` block ready for
   vector-DB ingestion.
 
 ## How to use
@@ -33,7 +33,7 @@ Export clean **JSON, CSV, Excel or via API**. No login, no Expedia API key.
 | **Max reviews per hotel** (`maxReviewsPerHotel`) | Cap per hotel (default 200). |
 | **Sort reviews by** (`sortBy`) | `newest` (default), `oldest`, `highestRating`, `lowestRating`. |
 | **From / To date** (`fromDate` / `toDate`) | Keep only reviews in a `YYYY-MM-DD` range. |
-| **Min / Max rating** (`minRating` / `maxRating`) | Keep only reviews within a 1–5 rating range. |
+| **Min / Max rating** (`minRating` / `maxRating`) | Keep only reviews within a 1-5 rating range. |
 | **Review sources** (`reviewSources`) | Which Expedia Group brands' reviews to return. Empty = all (cross-brand union). |
 | **Proxy** (`proxyConfiguration`) | Datacenter is enough; use residential for very large runs. |
 
@@ -45,13 +45,13 @@ One item per hotel with the reviews nested under `reviews[]`. Views: **Reviews**
 
 ## Supported sites
 
-Expedia plus the other Expedia Group brands — paste a **Hotels.com, Travelocity, Orbitz, Wotif, CheapTickets** or
+Expedia plus the other Expedia Group brands - paste a **Hotels.com, Travelocity, Orbitz, Wotif, CheapTickets** or
 **ebookers** hotel URL directly (Hotels.com `/ho<id>/` URLs are resolved automatically). Use **Review sources** to
 pick which brands' reviews to return, or leave it empty for the cross-brand union.
 
 ## Pricing
 
-Pay-per-event with **no start fee** — you pay only a per-review fee (see the Apify Console pricing panel). Lower
+Pay-per-event with **no start fee** - you pay only a per-review fee (see the Apify Console pricing panel). Lower
 **Max reviews per hotel** to control cost. Your first runs are covered by Apify's free tier.
 
 ## Legal
