@@ -61,4 +61,4 @@ Terms of Service and applicable laws (including data-protection rules) when usin
 
 ## Links
 
-- Apify Store listing: _coming soon_
+- Apify Store listing: https://apify.com/factden/expedia-hotel-reviews-scraper
