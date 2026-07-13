@@ -1,0 +1,10 @@
+{
+  "hotelUrls": [
+    "https://www.expedia.com/Las-Vegas-Hotels-Bellagio.h140596.Hotel-Information"
+  ],
+  "maxReviewsPerHotel": 100,
+  "sortBy": "newest",
+  "minRating": 1,
+  "maxRating": 5,
+  "proxyConfiguration": { "useApifyProxy": true }
+}

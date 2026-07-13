@@ -1,0 +1,120 @@
+[
+  {
+    "hotelId": 140596,
+    "hotelName": "Bellagio",
+    "hotelUrl": "https://www.expedia.com/Las-Vegas-Hotels-Bellagio.h140596.Hotel-Information",
+    "source": "expedia",
+    "reviewId": "6a5045084d2a09060c8aa865",
+    "submittedAt": "2026-07-10T14:16:51Z",
+    "overallRating": 10,
+    "ratingLabel": "Exceptional",
+    "reviewText": "Rooms were great. \nBuffet was awesome. \nNice casino. \nLove the Bellagio fountains.",
+    "subRatings": [
+      "Cleanliness: 10",
+      "Service: 10",
+      "Hotel condition: 10",
+      "Amenities: 10"
+    ],
+    "verified": true,
+    "reviewerName": "Billy",
+    "reviewerLocation": null,
+    "checkInDate": "2026-07-05T00:00:00Z",
+    "checkOutDate": "2026-07-09T00:00:00Z",
+    "travelCompanions": [
+      "Friends"
+    ],
+    "travelerCategories": [
+      "Friends"
+    ],
+    "language": "en",
+    "isMachineTranslated": false,
+    "helpfulVotes": 0,
+    "imagesCount": 0,
+    "reviewPhotos": [],
+    "ownerResponse": null,
+    "roomTypeId": "201646681",
+    "isAnonymous": false,
+    "brandType": "Expedia",
+    "markdownContent": "# Bellagio review (Expedia)\n\n**Rating:** 10/10 ★★★★★\n**Travelling as:** Friends\n**Sub-ratings:** Cleanliness: 10; Service: 10; Hotel condition: 10; Amenities: 10\n\n## Review\nRooms were great. \nBuffet was awesome. \nNice casino. \nLove the Bellagio fountains."
+  },
+  {
+    "hotelId": 140596,
+    "hotelName": "Bellagio",
+    "hotelUrl": "https://www.expedia.com/Las-Vegas-Hotels-Bellagio.h140596.Hotel-Information",
+    "source": "expedia",
+    "reviewId": "6a52f8f24ead9732c732d601",
+    "submittedAt": "2026-07-12T02:23:34Z",
+    "overallRating": 8,
+    "ratingLabel": "Very good",
+    "reviewText": "Must’ve been an off day. The room was hot when we got there after a long eight hour flight course it’s hot in Las Vegas but the AC technician fixed it within one hour very impressed sickly, the hot water in the room never got hot,It was warm water at best and sometimes cold other than that it was good, probably will not go back to the to the Bellagio.\nThanks",
+    "subRatings": [
+      "Cleanliness: 8",
+      "Service: 10",
+      "Hotel condition: 8",
+      "Amenities: 6"
+    ],
+    "verified": true,
+    "reviewerName": "Gus",
+    "reviewerLocation": null,
+    "checkInDate": "2026-07-06T00:00:00Z",
+    "checkOutDate": "2026-07-10T00:00:00Z",
+    "travelCompanions": [
+      "Partner"
+    ],
+    "travelerCategories": [
+      "Partner",
+      "Couples"
+    ],
+    "language": "en",
+    "isMachineTranslated": false,
+    "helpfulVotes": 0,
+    "imagesCount": 0,
+    "reviewPhotos": [],
+    "ownerResponse": null,
+    "roomTypeId": "201646678",
+    "isAnonymous": false,
+    "brandType": "Expedia",
+    "markdownContent": "# Bellagio review (Expedia)\n\n**Rating:** 8/10 ★★★★☆\n**Travelling as:** Partner\n**Sub-ratings:** Cleanliness: 8; Service: 10; Hotel condition: 8; Amenities: 6\n\n## Review\nMust’ve been an off day. The room was hot when we got there after a long eight hour flight course it’s hot in Las Vegas but the AC technician fixed it within one hour very impressed sickly, the hot water in the room never got hot,It was warm water at best and sometimes cold other than that it was good, probably will not go back to the to the Bellagio.\nThanks"
+  },
+  {
+    "hotelId": 140596,
+    "hotelName": "Bellagio",
+    "hotelUrl": "https://www.expedia.com/Las-Vegas-Hotels-Bellagio.h140596.Hotel-Information",
+    "source": "expedia",
+    "reviewId": "6a51530c56155e7688c2a48e",
+    "submittedAt": "2026-07-10T20:25:58Z",
+    "overallRating": 4,
+    "ratingLabel": "Fair",
+    "reviewText": "A hotel of this status needs to provide better inclusive ammenities for guests…like a basic coffee machine (you can purchase alcohol everywhere but a basic espresso is difficult to find) why not include resort fees… a single price whether high or low is understood. Add-ons like ‘resort fees’ feel like a money grab, especially since the gym is temporary and the beautiful resort pools are part of the allure.",
+    "subRatings": [
+      "Cleanliness: 10",
+      "Service: 6",
+      "Hotel condition: 6",
+      "Amenities: 6"
+    ],
+    "verified": true,
+    "reviewerName": "Tim",
+    "reviewerLocation": null,
+    "checkInDate": "2026-07-08T00:00:00Z",
+    "checkOutDate": "2026-07-10T00:00:00Z",
+    "travelCompanions": [
+      "Partner",
+      "Family"
+    ],
+    "travelerCategories": [
+      "Partner",
+      "Couples",
+      "Families"
+    ],
+    "language": "en",
+    "isMachineTranslated": false,
+    "helpfulVotes": 0,
+    "imagesCount": 0,
+    "reviewPhotos": [],
+    "ownerResponse": null,
+    "roomTypeId": "314062413",
+    "isAnonymous": false,
+    "brandType": "Expedia",
+    "markdownContent": "# Bellagio review (Expedia)\n\n**Rating:** 4/10 ★★☆☆☆\n**Travelling as:** Partner, Family\n**Sub-ratings:** Cleanliness: 10; Service: 6; Hotel condition: 6; Amenities: 6\n\n## Review\nA hotel of this status needs to provide better inclusive ammenities for guests…like a basic coffee machine (you can purchase alcohol everywhere but a basic espresso is difficult to find) why not include resort fees… a single price whether high or low is understood. Add-ons like ‘resort fees’ feel like a money grab, especially since the gym is temporary and the beautiful resort pools are part of the allure."
+  }
+]
