@@ -83,7 +83,7 @@ Every field is documented in **[`FIELDS.md`](./FIELDS.md)**. Ratings are shown o
 
 ## How much does it cost?
 
-Pay‑per‑event on Apify: a **per‑review fee with no per‑run start fee** — lower **Max reviews per hotel** to cap cost. New Apify accounts get **$5 in free credit**. See the [actor page](https://apify.com/factden/expedia-hotel-reviews-scraper?fpr=factden) for current pricing.
+Pay‑per‑event on Apify: a **per‑review fee** plus a small $0.005 per‑run start fee — lower **Max reviews per hotel** to cap cost. New Apify accounts get **$5 in free credit**. See the [actor page](https://apify.com/factden/expedia-hotel-reviews-scraper?fpr=factden) for current pricing.
 
 ---
 
