@@ -49,7 +49,7 @@ See [`snippets/`](./snippets) for Node and curl versions.
 |---|---|
 | `maxReviewsPerHotel` | Cap reviews per hotel (controls cost). |
 | `sortBy` | `newest`, `oldest`, `highestRating`, `lowestRating`. |
-| `fromDate` / `toDate` | Only reviews in a `YYYY-MM-DD` window. |
+| `fromDate` | Only reviews on or after a `YYYY-MM-DD` date (since-date / incremental). |
 | `minRating` / `maxRating` | Filter by overall rating (1–5 input; output is shown on the /10 scale). |
 
 Full field reference: [`FIELDS.md`](./FIELDS.md). Full input format: [`examples/input.json`](./examples/input.json).

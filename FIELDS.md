@@ -16,28 +16,21 @@ Each row starts with the hotel context, then the review fields.
 | `hotelUrl` | string | The hotel-page URL that produced this row. |
 | `source` | string | Which brand the URL resolved to (e.g. `expedia`, `hotels`). |
 | `reviewId` | string | Unique review identifier. |
-| `submittedAt` | string \| null | Review submission timestamp (ISO 8601). |
+| `submittedAt` | string \| null | Review date, `YYYY-MM-DD` (day precision). |
 | `overallRating` | number \| null | Overall guest rating on the **0–10** scale. |
-| `ratingLabel` | string \| null | Localized rating tier label (e.g. Exceptional, Wonderful, Good). |
+| `ratingLabel` | string \| null | Rating tier label (e.g. Excellent, Good). |
 | `reviewText` | string \| null | Review body. |
-| `subRatings` | array | Per-review category sub-ratings as a labeled-string array (nulls omitted), e.g. `["Cleanliness: 9.0", "Staff & service: 10.0"]`. Renders as one tidy cell in CSV. |
-| `verified` | boolean | Whether Expedia marks the stay as verified (`false` = flagged unverified). |
+| `verified` | boolean | Whether the review is a verified (booking-backed) review. |
 | `reviewerName` | string \| null | Reviewer display name; `null` when anonymous. |
-| `reviewerLocation` | string \| null | Reviewer's self-reported location. |
-| `checkInDate` | string \| null | Guest check-in date (`YYYY-MM-DD`). |
-| `checkOutDate` | string \| null | Guest check-out date (`YYYY-MM-DD`). |
-| `travelCompanions` | array | Who the guest travelled with (e.g. `["Business"]`, `["Family"]`). |
-| `travelerCategories` | array | Traveler category labels the platform attaches to the review. |
-| `language` | string \| null | ISO 639-1 code of the original review text. |
-| `isMachineTranslated` | boolean | Whether the returned text was machine-translated by the platform. |
-| `helpfulVotes` | integer | Helpful / "thanks" vote count on the review. |
-| `imagesCount` | integer | Number of photos attached to the review. |
-| `reviewPhotos` | array | URLs of photos attached to the review. |
-| `ownerResponse` | object \| null | Hotel-management reply, clubbed: `{ text, date }`, or `null` when the hotel has not replied. |
-| `roomTypeId` | string \| null | Identifier of the room type the guest booked. |
+| `language` | string \| null | Review language code; `en` for device-language reviews, the original locale for translated ones. |
+| `isMachineTranslated` | boolean | Whether the text was machine-translated. |
+| `helpfulVotes` | integer | Helpful-vote count on the review. |
+| `imagesCount` | integer | Number of guest photos attached to the review. |
+| `reviewPhotos` | array | URLs of guest photos attached to the review (where present). |
+| `ownerResponse` | object \| null | Hotel owner / management reply `{ text, date, responder }`, or `null` when none. |
 | `isAnonymous` | boolean | Whether the review was posted anonymously. |
-| `brandType` | string \| null | The Expedia Group brand the review originated on. |
 | `markdownContent` | string \| null | **LLM-ready** self-contained markdown block for the review — drop straight into a RAG pipeline. |
+| `subRatings`, `reviewerLocation`, `checkInDate`, `checkOutDate`, `travelCompanions`, `travelerCategories`, `roomTypeId`, `brandType` | kept | Retained in the schema for compatibility but **no longer provided by Expedia** — always `null` / empty. |
 
 ## Hotels dataset
 
@@ -46,23 +39,17 @@ One row per hotel (the aggregates). Starts with the same hotel context (`hotelId
 
 | Field | Type | Description |
 |---|---|---|
-| `brandName` | string \| null | Property brand/chain name. |
-| `structureType` | string \| null | Property type (Hotel, Resort, Apartment, …). |
-| `latitude` / `longitude` | number \| null | Property coordinates. |
-| `avgOverallRating` | number \| null | Mean overall rating on the **0–10** scale. |
-| `halfLifeRating` | number \| null | Expedia's recency-weighted ("half-life") rating on the 0–10 scale. |
+| `avgOverallRating` | number \| null | Overall property score on the **0–10** scale. |
 | `totalReviewCount` | integer | Total public reviews Expedia reports for the property. |
-| `ratingDistribution` | object \| null | Count of reviews per rating bucket. |
-| `hotelSubRatings` | array | Property-level category sub-ratings (labeled-string array). |
-| `categoryCounts` | object \| null | Review counts by traveler/category. |
-| `languageCounts` | object \| null | Review counts by language. |
+| `hotelSubRatings` | array | Property-level category sub-scores (labeled-string array), e.g. `["Cleanliness: 9.8", "Location: 9.2"]`. |
 | `reviewsExtracted` | integer | How many reviews this run actually delivered for the hotel. |
 | `extractedAt` | string (ISO datetime) | When the hotel row was scraped (UTC ISO 8601). |
+| `brandName`, `structureType`, `latitude`, `longitude`, `halfLifeRating`, `ratingDistribution`, `categoryCounts`, `languageCounts` | kept | Retained in the schema for compatibility but **no longer provided by Expedia** — always `null`. |
 
 ## Dataset views
 
 The Reviews dataset ships two pre-built views you can switch between in the Console or request via the API:
 
-- **Overview** — the columns most users want first (hotel, rating, `subRatings`, review text, owner response).
+- **Overview** — the columns most users want first (hotel, rating, review text, reviewer, review photos, owner response).
 - **AI ingest (LLM-ready)** — `markdownContent` plus the original text, language, rating and source — optimized for
   vector-DB / RAG loading.
