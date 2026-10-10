@@ -51,7 +51,6 @@ See [`snippets/`](./snippets) for Node and curl versions.
 | `sortBy` | `newest`, `oldest`, `highestRating`, `lowestRating`. |
 | `fromDate` / `toDate` | Only reviews in a `YYYY-MM-DD` window. |
 | `minRating` / `maxRating` | Filter by overall rating (1–5 input; output is shown on the /10 scale). |
-| `reviewSources` | Which Expedia Group brands' reviews to return. Empty = cross-brand union. |
 
 Full field reference: [`FIELDS.md`](./FIELDS.md). Full input format: [`examples/input.json`](./examples/input.json).
 
