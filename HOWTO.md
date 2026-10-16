@@ -48,7 +48,7 @@ See [`snippets/`](./snippets) for Node and curl versions.
 | Option | What it does |
 |---|---|
 | `maxReviewsPerHotel` | Cap reviews per hotel (controls cost). |
-| `sortBy` | `newest`, `oldest`, `highestRating`, `lowestRating`. |
+| `sortBy` | `newest` (default), `highestRating`, `lowestRating`. Applied at the source: `newest` returns the latest reviews first (a small `maxReviewsPerHotel` still gets them); rating sorts cover the whole hotel. |
 | `fromDate` | Only reviews on or after a `YYYY-MM-DD` date (since-date / incremental). |
 | `minRating` / `maxRating` | Filter by overall rating (1–5 input; output is shown on the /10 scale). |
 
